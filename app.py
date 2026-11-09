@@ -280,10 +280,10 @@ if menu == "Dashboard Utama":
     n_labeled = filtered[TARGET_DEFAULT].notna().sum() if TARGET_DEFAULT in filtered else 0
 
     a,b,c,d = st.columns(4)
-    a.metric("Jumlah Siswa", f"{n_students:,}")
-    b.metric("Rata-rata Nilai", "-" if pd.isna(avg_score) else f"{avg_score:.2f}")
-    c.metric("Rata-rata Kehadiran", "-" if pd.isna(avg_attendance) else f"{avg_attendance:.1f}%")
-    d.metric("Data dengan Label Risiko", f"{n_labeled:,}")
+    a.markdown(f"""<div style="background:#dcfce7;padding:18px;border-radius:12px;text-align:center;"><div style="color:#334155;font-size:14px;font-weight:600;">Jumlah Siswa</div><div style="color:#14532d;font-size:32px;font-weight:800;">{n_students:,}</div></div>""", unsafe_allow_html=True)
+    b.markdown(f"""<div style="background:#dcfce7;padding:18px;border-radius:12px;text-align:center;"><div style="color:#334155;font-size:14px;font-weight:600;">Rata-rata Nilai</div><div style="color:#14532d;font-size:32px;font-weight:800;">{"-" if pd.isna(avg_score) else f"{avg_score:.2f}"}</div></div>""", unsafe_allow_html=True)
+    c.markdown(f"""<div style="background:#dcfce7;padding:18px;border-radius:12px;text-align:center;"><div style="color:#334155;font-size:14px;font-weight:600;">Rata-rata Kehadiran</div><div style="color:#14532d;font-size:32px;font-weight:800;">{"-" if pd.isna(avg_attendance) else f"{avg_attendance:.1f}%"}</div></div>""", unsafe_allow_html=True)
+    d.markdown(f"""<div style="background:#dcfce7;padding:18px;border-radius:12px;text-align:center;"><div style="color:#334155;font-size:14px;font-weight:600;">Data dengan Label Risiko</div><div style="color:#14532d;font-size:32px;font-weight:800;">{n_labeled:,}</div></div>""", unsafe_allow_html=True)
 
     col1, col2 = st.columns([1.5, 1])
     with col1:
