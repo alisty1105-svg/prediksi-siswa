@@ -52,11 +52,17 @@ div.stButton > button:hover, div.stDownloadButton > button:hover {
   color:white; padding:24px 28px; border-radius:18px; margin-bottom:18px;
 }
 .hero h1,.hero p { color:white !important; }
-.small-note { color:#53715c; font-size:0.9rem; }
+.small-note { color:#1f2937; font-size:0.9rem; font-weight:500; }
 [data-testid="stWidgetLabel"] p { color: #1f2937 !important; opacity: 1 !important; font-weight: 600 !important; }
 [data-testid="stRadio"] label p, [data-testid="stRadio"] label span { color: #1f2937 !important; opacity: 1 !important; }
 [data-testid="stSlider"] p, [data-testid="stSlider"] span { color: #1f2937 !important; opacity: 1 !important; }
 [data-testid="stSelectbox"] label p, [data-testid="stMultiselect"] label p, [data-testid="stNumberInput"] label p, [data-testid="stTextInput"] label p { color: #1f2937 !important; opacity: 1 !important; font-weight: 600 !important; }
+.hero h1, .hero p { color: white !important; }
+div[data-testid="stMetric"] { background: #e8f5e9 !important; }
+div[data-testid="stMetric"] label p, [data-testid="stMetricLabel"] p { color: #14532d !important; opacity: 1 !important; font-weight: 600 !important; }
+div[data-testid="stMetricValue"] div, [data-testid="stMetricValue"] { color: #14532d !important; opacity: 1 !important; font-weight: 700 !important; }
+.small-note { color: #1f2937 !important; opacity: 1 !important; font-weight: 500 !important; }
+[data-testid="stCaptionContainer"] *, [data-testid="stMarkdownContainer"] p { color: #1f2937 !important; opacity: 1 !important; }
 .hero h1, .hero p { color: white !important; }
 </style>
 """, unsafe_allow_html=True)
