@@ -68,6 +68,10 @@ div[data-testid="stMetricValue"] div, [data-testid="stMetricValue"] { color: #14
 [data-testid="stFileUploader"] p, [data-testid="stFileUploader"] span, [data-testid="stFileUploader"] small { color: #14532d !important; opacity: 1 !important; font-weight: 600 !important; }
 [data-testid="stFileUploader"] button { background: #16a34a !important; border: 1px solid #16a34a !important; }
 [data-testid="stFileUploader"] button p, [data-testid="stFileUploader"] button span { color: white !important; opacity: 1 !important; }
+[data-testid="stSelectbox"] [data-baseweb="select"] div, [data-testid="stSelectbox"] [data-baseweb="select"] span { color: white !important; opacity: 1 !important; }
+[data-testid="stSelectbox"] input, [data-testid="stMultiselect"] input, [data-testid="stTextInput"] input, [data-testid="stNumberInput"] input { color: white !important; opacity: 1 !important; }
+[data-testid="stSelectbox"] svg, [data-testid="stMultiselect"] svg { fill: white !important; color: white !important; }
+[data-baseweb="menu"] li, [data-baseweb="menu"] li span, [data-baseweb="menu"] li div { color: #1f2937 !important; opacity: 1 !important; }
 </style>
 """, unsafe_allow_html=True)
 
