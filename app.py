@@ -64,6 +64,10 @@ div[data-testid="stMetricValue"] div, [data-testid="stMetricValue"] { color: #14
 .small-note { color: #1f2937 !important; opacity: 1 !important; font-weight: 500 !important; }
 [data-testid="stCaptionContainer"] *, [data-testid="stMarkdownContainer"] p { color: #1f2937 !important; opacity: 1 !important; }
 .hero h1, .hero p { color: white !important; }
+[data-testid="stFileUploader"] { background: #e8f5e9 !important; border: 2px dashed #16a34a !important; }
+[data-testid="stFileUploader"] p, [data-testid="stFileUploader"] span, [data-testid="stFileUploader"] small { color: #14532d !important; opacity: 1 !important; font-weight: 600 !important; }
+[data-testid="stFileUploader"] button { background: #16a34a !important; border: 1px solid #16a34a !important; }
+[data-testid="stFileUploader"] button p, [data-testid="stFileUploader"] button span { color: white !important; opacity: 1 !important; }
 </style>
 """, unsafe_allow_html=True)
 
