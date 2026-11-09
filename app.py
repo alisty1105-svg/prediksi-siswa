@@ -53,6 +53,11 @@ div.stButton > button:hover, div.stDownloadButton > button:hover {
 }
 .hero h1,.hero p { color:white !important; }
 .small-note { color:#53715c; font-size:0.9rem; }
+[data-testid="stWidgetLabel"] p { color: #1f2937 !important; opacity: 1 !important; font-weight: 600 !important; }
+[data-testid="stRadio"] label p, [data-testid="stRadio"] label span { color: #1f2937 !important; opacity: 1 !important; }
+[data-testid="stSlider"] p, [data-testid="stSlider"] span { color: #1f2937 !important; opacity: 1 !important; }
+[data-testid="stSelectbox"] label p, [data-testid="stMultiselect"] label p, [data-testid="stNumberInput"] label p, [data-testid="stTextInput"] label p { color: #1f2937 !important; opacity: 1 !important; font-weight: 600 !important; }
+.hero h1, .hero p { color: white !important; }
 </style>
 """, unsafe_allow_html=True)
 
